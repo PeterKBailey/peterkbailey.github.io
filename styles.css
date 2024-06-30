@@ -77,3 +77,11 @@ section{
 .job-section{
     background-color: #C7F9CC;
 }
+
+.inline{
+    display: inline;
+}
+
+#cursor{
+    font-size: xx-large;
+}

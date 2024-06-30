@@ -1,0 +1,55 @@
+body {
+    font-family: "Open Sans";
+    margin: 0px;
+    overflow:visible;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+    box-shadow: 0px 0.25px 5px 5px;
+    display:flex;
+    justify-content: center;
+}
+
+.navbar-content {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    column-gap: 300px;
+}
+  
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    transition: transform .2s; /* Animation */
+    white-space: nowrap;
+    padding:10px;
+}
+
+.navbar a:hover{
+    transform:scale(1.125);
+    background-color: aliceblue;
+}
+
+.name {
+    /* display: inline; */
+    white-space: nowrap;
+    border: 3px solid green;
+}
+
+.navigation {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    border: 3px solid green;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+}

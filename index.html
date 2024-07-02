@@ -13,44 +13,144 @@
                 <a href="#about">About me</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </div>
 
     <div class="content">
-        <section>
+        <section id="typing">
             <h1 id="typewriter" class="inline"></h1><h1 id="cursor" class="inline">|</h1>
         </section>
         <section>
             <h1 id="about">About Me</h1>
             <p>
-                Hi I'm Peter. Welcome to my portfolio website! I received my bachelor of Computer Science Honours from Carleton University with high distinction in 2024 and am now pursuing a career in software development and engineering.
+                Hi I'm Peter. Welcome to my portfolio website! I Graduated from Carleton University's co-operative education Computer Science Honours program with high distinction and received the <a href="https://newsroom.carleton.ca/story/carleton-honours-2024-spring-convocation-medallists/#3">Governor General's medal</a> - awarded annually to the student standing at the head of the graduating class at the undergraduate level. 
+            </p>
+            <p>
+                I am now pursuing a career in software development and engineering.
             </p>
         </section>
         <hr>
         <section>
             <h1 id="experience">Experience</h1>
             <div class="job-section">
-                <h3>Software Developer Co-op</h3>
-                <strong>JSI Group / Jan 2023 – May 2023</strong>
+                <img src="./assets/jsigroup_logo.jpg" alt="JSI logo">
+                <div>
+                    <h3>Software Developer Co-op | JSI Group </h3>
+                    <strong>Jan 2023 – May 2023</strong>
+                    <p>
+                        Worked in an Agile environment as a developer on digital content management and auditing software for both internal and customer tools. Tasks were primarily in the C#, Vistual Studio, .NET environment as well as migrating a Java REST API from Spring Boot to Quarkus.
+                    </p>
+                </div>
             </div>
             <div class="job-section">
-                <h3>Technical Developer Co-op</h3>
-                <strong>Elections Canada / May 2022 – Aug 2022</strong>
+                <div>
+                    <h3>Technical Developer Co-op | Elections Canada</h3>
+                    <strong>May 2022 – Aug 2022</strong>
+                    <p>
+                        Worked with an R&D team focused on prototyping an application for internal reference architecture. Tasks surrounded building a localized Angular2 application and publishing guides and documentation. Later work took a development focus for building an administrative poll tracking application in the Microsoft .NET and Azure environment.
+                    </p>
+                </div>
+                <img src="./assets/elections_canada_logo.jpg" alt="EC logo">
             </div>
             <div class="job-section">
-                <h3>IT Developer Co-op</h3>
-                <strong>National Research Council / May 2021 – Dec. 2021</strong>
+                <img src="./assets/national_research_council_logo.jpg" alt="NRC logo">
+                <div>
+                    <h3>IT Developer Co-op | National Research Council</h3>
+                    <strong>May 2021 – Dec. 2021</strong>
+                    <p>
+                        Worked as an Oracle APEX developer with a small team in direct collaboration with the client to meet specific requirements for a business management application. Tasks took place in the Oracle APEX environment and largely involved SQL and PL/SQL scripting as well as creating JavaScript plugins for CKEDITOR.
+                    </p>
+                </div>
             </div>
         </section>
         <hr>
         <section>
             <h1 id="projects">Projects</h1>
+            <div class="projects">
+                <div class="project-section">
+                    <div class="center job-section-item">
+                        <h3>Gravity and Collision Simulator</h3>
+                        <p>
+                            Java application simulating Newtonian physics of acceleration due to collision and gravity. Augmented with graphics rendering using the Processing sketchbook IDE.
+                        </p>
+                    </div>
+                    <div class="job-section-item">
+                        <img src="./assets/Mass_and_Collision.gif">
+                    </div>                
+                </div>
+                <div class="project-section">
+                    <div class="job-section-item">
+                        <img src="./assets/bella_bot.gif">
+                    </div>     
+                    <div class="center job-section-item">
+                        <h3>Discord Bot</h3>
+                        <p>
+                            Discord Server virtual assistant with functionality for emoji usage tracking, automated username colouring, and message test-reactions. "Bella" was made using the Discord.Js (JavaScript) library and is hosted on fly.io with automated deployment through GitHub including TEST and PROD environments.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-section">
+                    <div class="center job-section-item">
+                        <h3>Live Traffic Sign Detection App</h3>
+                        <p>
+                            Android application made in Android Studio using the Flutter library with dart. The app can classify traffic signs using a PyTorch (python) neural network trained on the GTSRB dataset in real time, and also demos YOLOv5 on mobile. Additionally users can take snapshots which can be manipulated with gesture control right within the app.
+                        </p>
+                    </div>
+                    <div class="job-section-item">
+                        <img class="job-section-item" src="./assets/traffic_sign_detection_app.gif">
+                    </div>
+                </div>
+                <div class="project-section">
+                    <div class="job-section-item">
+                        <img src="./assets/Movie_Database.gif">
+                    </div>
+                    <div class="center job-section-item">
+                        <h3>Movie Database Website</h3>
+                        <p>
+                            Full stack web application in which users can browse movies and actors, write reviews, and update information. Front-end built HTML, CSS, Pug template engine and back-end hosted on a Node.Js Express (JavaScript) server with RESTful API.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-section">
+                    <div class="center job-section-item">
+                        <h3>PokemonDB Webscraper and Indexed Search</h3>
+                        <p>
+                            Web crawler built to search and index the Pokemon database website. The project also includes ElasticLunr search functionality and also pagerank calculations for optional boosting to find relevant pages.
+                        </p>
+                    </div>
+                    <div class="job-section-item">
+                        <img src="./assets/pokemon_db_crawl_and_search.gif">
+                    </div>                
+                </div>
+                <div class="project-section">
+                    <div class="job-section-item">
+                        <img src="./assets/Oasis_CES_Simulator.gif">
+                    </div>
+                    <div class="center job-section-item">
+                        <h3>Oasis CES device simulation</h3>
+                        <p>
+                            Simulation of the Oasis Pro Cranio-Electro Stimulation device built in C++ with a QT GUI. This project was organized and built collaboratively in a team environment using GitHub for source control.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <hr>
-        <section>
-            <h1 id="skills">Skills</h1>
+        <section style="height: 100%">
+            <h1 id="contact">Contact Me</h1>
+            <div class="contact-section">
+                <a href="mailto:peterkbailey@cmail.carleton.ca">
+                    <img src="./assets/reshot-icon-email-UERZ83AW2P.svg">
+                </a>
+                <a href="https://github.com/PeterKBailey" target="_blank">
+                    <img src="./assets/Octicons-mark-github.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/peterkbailey/" target="_blank">
+                    <img src="./assets/LinkedIn_icon.svg">
+                </a>
+            </div>
         </section>
     </div>
 </body>
